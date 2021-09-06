@@ -1,6 +1,8 @@
 import { http } from "./http-io";
 import { createConnection } from "typeorm";
 
+import "./websocket/client";
+
 createConnection();
 
 http.listen(process.env.PORT || 3333, () =>
