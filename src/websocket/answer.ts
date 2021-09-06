@@ -24,7 +24,9 @@ io.on("connection", (socket: Socket) => {
       return;
     } 
 
-    await answerService.create({ text });
+    const answer = await answerService.create({ text });
+    
+    callback({ answer });
 
     const answersList = await answerService.list("DESC", 100);
 
