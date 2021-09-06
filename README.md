@@ -1,6 +1,6 @@
 # Live Answers - Backend
 
-## Technologies
+## :computer: Technologies
 
 -  [NodeJS](https://nodejs.org/en/)
 -  [Socket.io](https://socket.io/docs/v4/)
