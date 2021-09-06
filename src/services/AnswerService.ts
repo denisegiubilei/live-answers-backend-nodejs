@@ -27,7 +27,7 @@ class AnswerService {
       .createQueryBuilder("answers")
       .orderBy("created_at", sort)
       .limit(limit || 100)
-      .execute();
+      .getMany();
 
     return answers;
   }
