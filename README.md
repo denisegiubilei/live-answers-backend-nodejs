@@ -1,6 +1,6 @@
 # Live Answers - Backend
 
-## Technologies
+## :computer: Technologies
 
 -  [NodeJS](https://nodejs.org/en/)
 -  [Socket.io](https://socket.io/docs/v4/)
@@ -9,7 +9,7 @@
 -  [Postgres](https://www.postgresql.org/)
 -  [eslint](https://eslint.org/)
 
-## :information_source: How To Use
+## :information_source: How To Install
 
 To clone and run this application, you'll need Git, Node.js and Yarn installed on your computer.
 
@@ -27,9 +27,13 @@ $ yarn
 $ touch .env
 
 ```
-## Running 
+## :rocket: Running the application
 
-* ```yarn dev``` to run on default http://localhost:3333/
+To run on default http://localhost:3333/
+
+```bash
+$ yarn dev
+```
 
 ## API HTTP Endpoints
 
