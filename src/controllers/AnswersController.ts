@@ -23,7 +23,7 @@ class AnswersController {
     const answersService = new AnswerService();
 
     try {
-      const answersList = await answersService.list();
+      const answersList = await answersService.list("DESC", 100);
 
       return response.json(answersList);
     } catch (err) {

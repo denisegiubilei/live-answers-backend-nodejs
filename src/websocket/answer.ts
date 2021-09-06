@@ -11,7 +11,7 @@ io.on("connection", (socket: Socket) => {
 
     await answerService.create({ text });
 
-    const anwsersList = await answerService.list();
+    const anwsersList = await answerService.list("DESC", 100);
 
     io.emit("update_answers_list", {
       anwsersList,
