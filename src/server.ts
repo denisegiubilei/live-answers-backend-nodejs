@@ -1,12 +1,8 @@
-import express from 'express';
+import { http } from "./http-io";
 import { createConnection } from "typeorm";
 
 createConnection();
 
-const app = express();
-
-app.use(express.json());
-
-app.get('/ping', (_, res) => res.json({ pong: true }));
-
-app.listen(process.env.PORT || 3333, () => console.log(`Server is running on port ${process.env.PORT || 3333}`));
+http.listen(process.env.PORT || 3333, () =>
+  console.log(`Server is running on port ${process.env.PORT || 3333}`)
+);
