@@ -21,6 +21,14 @@ class AnswerService {
 
     return answer;
   }
+
+  async list(limit?: number) {
+    const answer = this.answersRepository
+      .createQueryBuilder("answers")
+      .limit(limit || 100);
+
+    return answer;
+  }
 }
 
 export { AnswerService };
