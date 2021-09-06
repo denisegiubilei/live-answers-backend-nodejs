@@ -1,7 +1,7 @@
 import { http } from "./http-io";
 import { createConnection } from "typeorm";
 
-import "./websocket/client";
+import "./websocket/answer";
 
 createConnection();
 

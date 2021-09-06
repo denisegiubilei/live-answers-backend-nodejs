@@ -2,12 +2,13 @@ import express from "express";
 
 import { createServer } from "http";
 import { Server } from "socket.io";
+import { routes } from "./routes";
 
 const app = express();
 
 app.use(express.json());
 
-app.get("/ping", (_, res) => res.json({ pong: true }));
+app.use(routes);
 
 const http = createServer(app);
 const io = new Server(http, {

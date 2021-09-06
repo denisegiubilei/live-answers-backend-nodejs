@@ -23,11 +23,12 @@ class AnswerService {
   }
 
   async list(limit?: number) {
-    const answer = this.answersRepository
+    const answers = await this.answersRepository
       .createQueryBuilder("answers")
-      .limit(limit || 100);
+      .limit(limit || 100)
+      .execute();
 
-    return answer;
+    return answers;
   }
 }
 
