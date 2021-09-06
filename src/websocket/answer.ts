@@ -11,10 +11,10 @@ io.on("connection", (socket: Socket) => {
 
     await answerService.create({ text });
 
-    const anwsersList = await answerService.list("DESC", 100);
+    const answersList = await answerService.list("DESC", 100);
 
     io.emit("update_answers_list", {
-      anwsersList,
+      answersList,
     });
   });
 
