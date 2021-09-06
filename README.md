@@ -8,7 +8,6 @@
 -  [Typeorm](https://typeorm.io/#/)
 -  [Postgres](https://www.postgresql.org/)
 -  [eslint](https://eslint.org/)
--  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
 ## :information_source: How To Use
 
