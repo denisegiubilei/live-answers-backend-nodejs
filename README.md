@@ -11,6 +11,8 @@
 
 ## :information_source: How To Use
 
+To clone and run this application, you'll need Git, Node.js and Yarn installed on your computer.
+
 ```bash
 # Clone this repository
 $ git clone https://github.com/denisegiubilei/live-answers-backend-nodejs.git
