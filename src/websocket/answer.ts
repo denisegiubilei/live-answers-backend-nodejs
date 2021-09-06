@@ -9,9 +9,13 @@ io.on("connection", (socket: Socket) => {
   socket.on("user_answered", async ({ text }) => {
     const answerService = new AnswerService();
 
-    const anwser = await answerService.create({ text });
+    await answerService.create({ text });
 
-    console.log(anwser);
+    const anwsersList = await answerService.list();
+
+    io.emit("update_answers_list", {
+      anwsersList,
+    });
   });
 
   socket.on("disconnect", () => {
